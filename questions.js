@@ -1,7 +1,7 @@
 const number = (id,title,text,answer,tolerance=0.001,hint='Inserisci il risultato numerico.') => ({id,title,text,answer,tolerance,hint,type:'number'});
 const choice = (id,title,text,options,answer) => ({id,title,text,options,answer,type:'choice'});
 export const physics = [
-  number(1,'Componenti cartesiane','Dati a⃗ = 3i⃗ + 4j⃗ e b⃗ = 2i⃗ − 5j⃗, calcola a⃗ · b⃗.',-14),
+  number(1,'Componenti cartesiane','Dati i vettori a = (3, 4) e b = (2, −5), calcola il prodotto scalare a · b.\nIn componenti cartesiane: aₓ = 3, aᵧ = 4; bₓ = 2, bᵧ = −5.',-14),
   choice(2,'Vettori ortogonali','Due vettori non nulli sono perpendicolari. Quanto vale il loro prodotto scalare, e perché?',['È nullo, perché cos 90° = 0.','È uguale al prodotto dei moduli.','È negativo, perché l’angolo è ottuso.','È nullo solo se i moduli sono uguali.'],0),
   number(3,'Il versore dell’asse x','Calcola il prodotto scalare tra a⃗ = 5i⃗ − 2j⃗ e il versore i⃗.',5),
   number(4,'Moduli e angolo','Due vettori hanno moduli a = 4 e b = 6 e formano un angolo di 60°. Calcola il prodotto scalare.',12),
